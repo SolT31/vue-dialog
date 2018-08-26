@@ -1,8 +1,27 @@
 <template>
   <div id="app">
-    
+    <dialogs-view/>
   </div>
 </template>
+
+<script>
+import DialogTest from '../Dialogs/Confirm'
+
+export default {
+  data: () => ({
+    test: null
+  }),
+  created () {
+    this.$dialog.create(DialogTest, {}).then(() => {
+      alert('success')
+    })
+
+    this.$dialog.create(DialogTest, {}).then(() => {
+      alert('success 2')
+    })
+  }
+}
+</script>
 
 <style lang="less">
   #app {
