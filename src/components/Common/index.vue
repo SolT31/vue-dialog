@@ -8,16 +8,17 @@
 import DialogTest from '../Dialogs/Confirm'
 
 export default {
+  name: 'App',
   data: () => ({
     test: null
   }),
   created () {
-    this.$dialog.create(DialogTest, {}).then(() => {
-      alert('success')
+    this.$dialog.create(DialogTest).then(() => {
+    //  alert('success')
     })
 
-    this.$dialog.create(DialogTest, {}).then(() => {
-      alert('success 2')
+    this.$dialog.create(DialogTest).then(() => {
+    //  alert('success')
     })
   }
 }

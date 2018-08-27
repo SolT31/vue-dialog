@@ -4,3 +4,9 @@
     <button @click="$emit('reject')">Cancel</button>
   </div>
 </template>
+
+<script>
+export default {
+//  name: 'confirm-dialog'
+}
+</script>
