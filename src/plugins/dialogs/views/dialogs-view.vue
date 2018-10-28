@@ -19,17 +19,17 @@
 </template>
 
 <script>
-import dialogWrap from './dialog-wrap'
+  import dialogWrap from './dialog-wrap';
 
-export default {
-  name: 'dialogs-view',
-  components: {
-    dialogWrap
-  },
-  data: () => ({
-    active: null
-  })
-}
+  export default {
+    name: 'dialogs-view',
+    components: {
+      dialogWrap
+    },
+    data: () => ({
+      active: null
+    })
+  }
 </script>
 
 <style scoped>

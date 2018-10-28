@@ -29,7 +29,32 @@
       "plugin:vue/essential",
       "@vue/standard"
     ],
-    "rules": {},
+    "rules": {
+      "vue/no-side-effects-in-computed-properties": true,
+      "vue/script-indent": [
+        "error",
+        2,
+        {
+          "switchCase": 1,
+          "baseIndent": 1
+        }
+      ],
+      "vue/html-indent": [
+        "error",
+        2
+      ],
+      "vue/html-self-closing": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.vue"
+        ],
+        "rules": {
+          "indent": "off"
+        }
+      }
+    ],
     "parserOptions": {
       "parser": "babel-eslint"
     }
